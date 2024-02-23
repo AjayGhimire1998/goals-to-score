@@ -69,6 +69,8 @@ function Dashboard() {
             <h2>You have not set any goals.</h2>
           </>
         )}
+        <br/>
+        <br/>
       </section>
     </>
   );
