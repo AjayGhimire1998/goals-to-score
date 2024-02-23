@@ -65,9 +65,10 @@ function GoalForm() {
             <div>
               <h3>
                 Set a New Goal
-                <p style={{ float: "right" }}>
+                <p style={{ float: "right", cursor: "pointer" }}>
                   <FaWindowClose
                     size={"25px"}
+                    
                     onClick={() => dispatch(closeGoalForm())}
                   />
                 </p>
