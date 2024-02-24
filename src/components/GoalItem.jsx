@@ -16,7 +16,7 @@ import axios from "axios";
 function GoalItem({ goal }) {
   const API = process.env.REACT_APP_API_URL;
   const dispatch = useDispatch();
-  const { isAddTaskFormOpen, goalId, goals} = useSelector(
+  const { isAddTaskFormOpen, goalId, goals } = useSelector(
     (store) => store.goals
   );
 
@@ -24,9 +24,8 @@ function GoalItem({ goal }) {
   const indexOfComma = dateAndTime.indexOf(",");
   const dateCreated = dateAndTime.slice(0, indexOfComma);
   const timeCreated = dateAndTime.slice(indexOfComma + 1);
-// console.log(goals);
+  // console.log(goals);
   // console.log(taskId);
-
 
   const onToggle = async (e, task_id) => {
     e.preventDefault();
@@ -53,79 +52,83 @@ function GoalItem({ goal }) {
     );
     // console.log(res.data);
     dispatch(replaceUpdatedGoal(res.data));
-
   };
 
   return (
     <div className="goal">
-      <div>
-        <div className="edit-delete">
-          <small>Date: {dateCreated}</small>
-          <small>Time: {timeCreated}</small>
-        </div>
-        <br />
-        <br />
-        <h1>{goal && goal.title && goal.title.toUpperCase()}</h1>
-        <br />
-        <ul>
-          {goal && goal.goals_to_score_tasks && goal.goals_to_score_tasks.slice().sort((a, b) => a.id - b.id).map((task, index) => {
-            return (
-              <div key={index}>
-                <div className="task-items">
-                  <li
-                    // key={task.id}
-                    style={
-                      task.active === false
-                        ? { textDecoration: "line-through" }
-                        : {
-                            textShadow: " 0 0 1em white, 0 0 0.2em white",
-                            fontWeight: "bolder",
-                          }
-                    }
-                  >
-                    {index + 1}: {task?.task.toUpperCase()}
-                  </li>
-                  <div>
-                    <small style={{ fontSize: "10px" }}>pending..</small>
-                    <label className="switch">
-                      <input
-                        type="checkbox"
-                        value={task.active}
-                        className="checkbox"
-                        checked={!task.active}
-                        onChange={(e) => onToggle(e, task.id)}
-                      />
-                      <span className="slider round"></span>
-                    </label>
-                    <small style={{ fontSize: "10px" }}>..done</small>
+      <div className="edit-delete">
+        <small>Date: {dateCreated}</small>
+        <small>Time: {timeCreated}</small>
+      </div>
+      <br />
+      <br />
+      <h1>{goal && goal.title && goal.title.toUpperCase()}</h1>
+      <br />
+      <ul>
+        {goal &&
+          goal.goals_to_score_tasks &&
+          goal.goals_to_score_tasks
+            .slice()
+            .sort((a, b) => a.id - b.id)
+            .map((task, index) => {
+              return (
+                <div key={index}>
+                  <div className="task-items">
+                    <div className="task-item">
+                      <li
+                        // key={task.id}
+                        style={
+                          task.active === false
+                            ? { textDecoration: "line-through" }
+                            : {
+                                textShadow: " 0 0 1em white, 0 0 0.2em white",
+                                fontWeight: "bolder",
+                              }
+                        }
+                      >
+                        {index + 1}: {task?.task.toUpperCase()}
+                      </li>
+                    </div>
+                    <div className="task-item-2">
+                      <small style={{ fontSize: "10px" }}>pending..</small>
+                      <label className="switch">
+                        <input
+                          type="checkbox"
+                          value={task.active}
+                          className="checkbox"
+                          checked={!task.active}
+                          onChange={(e) => onToggle(e, task.id)}
+                        />
+                        <span className="slider round"></span>
+                      </label>
+                      <small style={{ fontSize: "10px" }}>..done</small>
+                    </div>
                   </div>
+                  <hr />
+                  <br />
                 </div>
-                <hr />
-                <br />
-              </div>
-            );
-          })}
-        </ul>
-        <br />
-        {isAddTaskFormOpen && goal && goal.id === goalId ? (
-          <TaskForm goal={goal} />
-        ) : null}
-        <br />
-        <div className="edit-delete">
-          <FaPlus
-            size={"30px"}
-            className="icon"
-            onClick={() => {
-              dispatch(setGoalId(goal.id));
-              dispatch(openAddTaskForm());
-            }}
-          />
-          <IoMdDoneAll
-            size={"30px"}
-            className="icon"
-            onClick={() => dispatch(deleteUserGoal(goal.id))}
-          />
-        </div>
+              );
+            })}
+      </ul>
+      <br />
+      {isAddTaskFormOpen && goal && goal.id === goalId ? (
+        <TaskForm goal={goal} />
+      ) : null}
+      <br />
+      <div className="edit-delete">
+        <FaPlus
+          size={"30px"}
+          className="icon"
+          onClick={() => {
+            dispatch(setGoalId(goal.id));
+            dispatch(openAddTaskForm());
+          }}
+        />
+        <IoMdDoneAll
+          size={"30px"}
+          className="icon"
+          onClick={() => dispatch(deleteUserGoal(goal.id))}
+        />
       </div>
     </div>
   );

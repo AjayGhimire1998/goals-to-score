@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   height: 100vh;
 }
 
@@ -95,9 +95,13 @@ h3 {
 .goal {
   background-color: #e0dbdb;
   margin: 30px 0;
-  padding: 20px 0 10px;
+  padding: 20px 16px;
   position: relative;
 }
+/* 
+@media screen {
+  
+} */
 
 .goal .close {
   position: absolute;
@@ -107,7 +111,7 @@ h3 {
   border: none;
   background: none;
 }
-.edit-delete{
+.edit-delete {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
@@ -138,8 +142,8 @@ h3 {
   right: 0;
   bottom: 0;
   background-color: rgb(154, 1, 1);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -150,8 +154,8 @@ h3 {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
@@ -177,32 +181,41 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.icon{
+.icon {
   cursor: pointer;
 }
 
-.task-items{
+.task-items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  justify-items:center;
+  /* justify-items: center; */
+  /* text-align: left; */
 }
 
+.task-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* max-width: 80%;  */
+  /* justify-self: start;  */
+}
 
-.parent-intro{
+.parent-intro {
   width: auto;
   height: auto;
-  
+
   position: absolute;
-  top:50%;
+  top: 50%;
   bottom: 0;
   left: 0;
   right: 0;
-  
+
   margin: auto;
 }
 
-.add-task{
+.add-task {
   width: 20%;
   padding: 5px 0px;
   background-color: #000;
@@ -211,18 +224,17 @@ input:checked + .slider:before {
   border-radius: 5px;
 }
 
-.add-task:hover{
+.add-task:hover {
   transform: scale(0.98);
 }
 .form,
 .content {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
 }
 
 .form-group {
   margin-bottom: 10px;
-  
 }
 
 .form-group input,
@@ -276,12 +288,11 @@ input:checked + .slider:before {
   transform: scale(0.98);
 }
 
-.btn-start{
+.btn-start {
   width: 100%;
   margin-bottom: 20px;
   background: #fff;
   color: #000;
-
 }
 
 .loadingSpinnerContainer {
@@ -326,6 +337,20 @@ input:checked + .slider:before {
 
   .heading p {
     font-size: 1.5rem;
-    
   }
+
+  .goal {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .form,
+  .content {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .task-item{
+  text-align: left;
+  font-size: small;
+  }
+  
 }
