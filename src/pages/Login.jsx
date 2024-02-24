@@ -101,14 +101,14 @@ function Login() {
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
-              minWidth: "500px",
+              // minWidth: "500px",
             }}
           >
             <div className="form-froup">
               <button
                 type="submit"
                 className="btn btn-block"
-                style={{ maxWidth: "300px" }}
+                // style={{ maxWidth: "300px" }}
               >
                 Login
               </button>
@@ -117,7 +117,7 @@ function Login() {
               <button
                 className="btn btn-block"
                 onClick={handleGuestLogin}
-                style={{ backgroundColor: "purple", maxWidth: "300px" }}
+                style={{ backgroundColor: "purple"}}
               >
                 Quick Guest Login
               </button>
