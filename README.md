@@ -10,9 +10,12 @@ GoalsToScore is A MERN stack app for effective goals management, allowing for cr
 [![Demo](./Goals.gif)](https://goals-to-score.netlify.app/)
 <br>
 <br>
+
 [Live Demo](https://youtu.be/aAT7HKS-DdU)
+
 <br>
 <br>
+
 [![Live Demo](./Goals.png)](https://youtu.be/aAT7HKS-DdU "Goals-To-Score")
 
 
