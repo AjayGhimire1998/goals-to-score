@@ -65,7 +65,7 @@ GoalsToScore is A MERN stack app for effective goals management, allowing for cr
    npm start
 
    
-5. **Access MemeBook:**
+5. **Access GoalsToScore:**
    Open your browser and navigate to http://localhost:3000 to use GoalsToScore locally.
 
 
