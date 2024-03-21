@@ -56,7 +56,7 @@ GoalsToScore is A MERN stack app for effective goals management, allowing for cr
 
 2. **Install Dependencies:**
    ```bash
-   cd memebook
+   cd goals-to-score
    npm install
    
 
