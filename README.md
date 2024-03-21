@@ -60,12 +60,12 @@ GoalsToScore is A MERN stack app for effective goals management, allowing for cr
    npm install
    
 
-4. **Run the App:**
+3. **Run the App:**
    ```bash
    npm start
 
    
-5. **Access GoalsToScore:**
+4. **Access GoalsToScore:**
    Open your browser and navigate to http://localhost:3000 to use GoalsToScore locally.
 
 
