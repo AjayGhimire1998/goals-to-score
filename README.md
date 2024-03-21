@@ -18,37 +18,32 @@ GoalsToScore is A MERN stack app for effective goals management, allowing for cr
 
 ## Features
 
-1. **Browse Memes:** Explore a wide variety of memes sourced from Jokes Rapid API, Reddit API, and ImgFlip API.
+1. **Sign Up:** Signup with your email to register and login for personalised experience.
 
-2. **Upload Your Own Memes:** Share your creativity with the community by uploading your custom memes.
+2. **Creaate Goals:** Create a major goal that you want to accomplish..
 
-3. **Create Memes On-The-Fly:** Utilize the ImgFlip API to generate memes quickly with user-friendly tools.
+3. **Create Tasks:** Create sub goals or tasks to assign to goals.
 
-4. **User Authentication:** Securely log in using Firebase authentication to personalize your MemeBook experience.
+4. **Toggle Tasks:** Toggle between pending and completed for the tasks.
 
-5. **Contextualized Content:** Enjoy a personalized meme feed based on your preferences and interactions.
+5. **Add tasks later and delete:** Add tasks later on the go, and delete the whole goal once accomplished.
 
 
 ## Technologies Used
 
 - **React.js:** The front-end is built using React.js, providing a dynamic and responsive user interface.
 
-- **Firebase:** Firebase is used for authentication and storage, ensuring a secure and scalable solution.
+- **Node.js:** Express.js and MongoDb is used for authentication and storage, ensuring a secure and scalable solution.
 
-- **React Hooks and Contexts:** State management in MemeBook is handled efficiently with React Hooks and Contexts, providing a seamless user experience.
+- **React Hooks and Contexts:** State management in GoalsToScore is handled efficiently with React Hooks and Contexts, providing a seamless user experience.
 
-- **Jokes Rapid API:** Integrates jokes into the meme feed for an added dose of humor.
-
-- **Reddit API:** Fetches memes from various subreddits, broadening the content available on MemeBook.
-
-- **ImgFlip API:** Empowers users to create memes on-the-fly with a variety of customizable templates.
 
 
 ## Getting Started
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/AjayGhimire1998/memebook.git
+   git clone https://github.com/AjayGhimire1998/goals-to-score.git
 
 
 2. **Install Dependencies:**
@@ -63,12 +58,12 @@ GoalsToScore is A MERN stack app for effective goals management, allowing for cr
 
    
 5. **Access MemeBook:**
-   Open your browser and navigate to http://localhost:3000 to use MemeBook locally.
+   Open your browser and navigate to http://localhost:3000 to use GoalsToScore locally.
 
 
 ## Contributing
 
-We welcome contributions to make MemeBook even more entertaining and user-friendly. Feel free to submit issues, feature requests, or pull requests.
+I welcome contributions to make GoalsToScore even more entertaining and user-friendly. Feel free to submit issues, feature requests, or pull requests.
 
 ## License
 
@@ -76,9 +71,9 @@ This project is licensed under the MIT License.
 
 ## Acknowledgments
 
-Thanks to the developers of Jokes Rapid API, Reddit API, and ImgFlip API for providing valuable content and tools.
+Thanks to the developers of React.js, Redux.js, Express.js, MongoDB, for providing valuable content and tools.
 
 
-# Enjoy MemeBook and happy meme-sharing! 🎉
+# Enjoy GoalsToScore and happy-productivity! 🎉
 
 
