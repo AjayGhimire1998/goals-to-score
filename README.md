@@ -21,13 +21,17 @@ GoalsToScore is A MERN stack app for effective goals management, allowing for cr
 1. **Sign Up:** Signup with your email to register and login for personalised experience.
 ![Login](./login.png)
 
-2. **Creaate Goals:** Create a major goal that you want to accomplish..
+2. **Creaate Goals:** Create a major goal that you want to accomplish.
+![Goal](./goal.png)
 
 3. **Create Tasks:** Create sub goals or tasks to assign to goals.
+![Task](./task.png)
 
 4. **Toggle Tasks:** Toggle between pending and completed for the tasks.
+![Toggle](./toggle.png)
 
 5. **Add tasks later and delete:** Add tasks later on the go, and delete the whole goal once accomplished.
+![Add](./add.png)
 
 
 ## Technologies Used
