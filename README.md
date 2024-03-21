@@ -19,6 +19,7 @@ GoalsToScore is A MERN stack app for effective goals management, allowing for cr
 ## Features
 
 1. **Sign Up:** Signup with your email to register and login for personalised experience.
+![Login](./login.png)
 
 2. **Creaate Goals:** Create a major goal that you want to accomplish..
 
