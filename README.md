@@ -7,7 +7,7 @@
 
 GoalsToScore is A MERN stack app for effective goals management, allowing for creation and updates of goals and sub-tasks. The app requires a simple authentication, and allows a user to save their goals with tasks related to them. They can later add more tasks as needed and switch the status of each task to either pending or completed which updates in the backend synchronously.
 
-![Demo](./Goals.gif)(https://goals-to-score.netlify.app/)
+[![Demo](./Goals.gif)](https://goals-to-score.netlify.app/)
 <br>
 <br>
 [Live Demo](https://youtu.be/aAT7HKS-DdU)
