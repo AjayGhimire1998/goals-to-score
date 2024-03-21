@@ -1,47 +1,84 @@
-# Getting Started with Create React App and Redux
+# GoalsToScore - A task management app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+[Try here](https://goals-to-score.netlify.app/)
 
-## Available Scripts
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+GoalsToScore is A MERN stack app for effective goals management, allowing for creation and updates of goals and sub-tasks. The app requires a simple authentication, and allows a user to save their goals with tasks related to them. They can later add more tasks as needed and switch the status of each task to either pending or completed which updates in the backend synchronously.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Demo](./Membook.gif)
+<br>
+<br>
+[Live Demo](https://youtu.be/aAT7HKS-DdU)
+<br>
+<br>
+[![Live Demo](https://i.imgur.com/8nLFCVP.png)](https://youtu.be/JTJ3IyiqIqk?si=CjXrO9-23CzK0r2h "Everything Is AWESOME")
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Browse Memes:** Explore a wide variety of memes sourced from Jokes Rapid API, Reddit API, and ImgFlip API.
 
-### `npm run build`
+2. **Upload Your Own Memes:** Share your creativity with the community by uploading your custom memes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Create Memes On-The-Fly:** Utilize the ImgFlip API to generate memes quickly with user-friendly tools.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **User Authentication:** Securely log in using Firebase authentication to personalize your MemeBook experience.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. **Contextualized Content:** Enjoy a personalized meme feed based on your preferences and interactions.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technologies Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **React.js:** The front-end is built using React.js, providing a dynamic and responsive user interface.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Firebase:** Firebase is used for authentication and storage, ensuring a secure and scalable solution.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **React Hooks and Contexts:** State management in MemeBook is handled efficiently with React Hooks and Contexts, providing a seamless user experience.
 
-## Learn More
+- **Jokes Rapid API:** Integrates jokes into the meme feed for an added dose of humor.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Reddit API:** Fetches memes from various subreddits, broadening the content available on MemeBook.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-# goals-to-score
+- **ImgFlip API:** Empowers users to create memes on-the-fly with a variety of customizable templates.
+
+
+## Getting Started
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/AjayGhimire1998/memebook.git
+
+
+2. **Install Dependencies:**
+   ```bash
+   cd memebook
+   npm install
+   
+
+4. **Run the App:**
+   ```bash
+   npm start
+
+   
+5. **Access MemeBook:**
+   Open your browser and navigate to http://localhost:3000 to use MemeBook locally.
+
+
+## Contributing
+
+We welcome contributions to make MemeBook even more entertaining and user-friendly. Feel free to submit issues, feature requests, or pull requests.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgments
+
+Thanks to the developers of Jokes Rapid API, Reddit API, and ImgFlip API for providing valuable content and tools.
+
+
+# Enjoy MemeBook and happy meme-sharing! 🎉
+
+
